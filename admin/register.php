@@ -1,36 +1,34 @@
-<?php include('partials/menu.php'); ?>
+<?php include('../config/constant.php'); ?>
 
-
-<div class="main-content">
-    <div class="wrapper">
-        <h1>Add Admin</h1>
-        <br><br>
-
-        <?php
-        // checking the session is added or not
-        if(isset($_SESSION['add'])){
-            echo $_SESSION['add'];
-            unset($_SESSION['add']);
-        }
-        ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-food-order</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <div class="reg-form">
         <form action="" method="POST">
             <table class="tbl-30">
                 <tr>
-                    <td>Full Name</td>
+                    <td>Full Name: </td>
                     <td>
-                        <input type="text" name="name" id="name" placeholder="Enter your name">
+                        <input type="text" name="name" id="name" placeholder="Enter your name" require>
                     </td>
                 </tr>
                 <tr>
-                    <td>User Name</td>
+                    <td>User Name: </td>
                     <td>
-                        <input type="text" name="uname" id="uname" placeholder="Enter your user name">
+                        <input type="text" name="uname" id="uname" placeholder="Enter your user name" require>
                     </td>
                 </tr>
                 <tr>
-                    <td>Password</td>
+                    <td>Password: </td>
                     <td>
-                        <input type="password" name="password" id="password" placeholder="Enter password">
+                        <input type="password" name="password" id="password" placeholder="Enter password" max="8" min="4" require>
                     </td>
                 </tr>
                 <tr>
@@ -41,10 +39,7 @@
             </table>
         </form>
     </div>
-</div>
-
-<?php include('partials/footer.php'); ?>
-
+</body>
 
 <?php
 
@@ -64,12 +59,8 @@ if(isset($_POST['submit'])){
 
     // check whether the data is inserted or not
 if($result==true){
-    // echo "data inserted";
-    // create a session variable to display message
-    $_SESSION['add']= "Admin added successfully" ;
     // redirect page
-    header("location:".SITEURL.'admin/manage-admin.php');
-    // header("location:".SITEURL.'admin/login.php');
+    header("location:".SITEURL.'admin/login.php');
 }else{
     // echo "failed to insert data";
     // create a session variable to display message

@@ -30,14 +30,14 @@
                         <a href="<?php echo SITEURL; ?>about.php">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="<?php echo SITEURL; ?>catagories.php">Catagories</a>
+                        <a href="<?php echo SITEURL; ?>catagories.php">Categories</a>
                     </li>
                     <li class="nav-item">
                         <a href="<?php echo SITEURL; ?>food.php">Food</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a href="<?php echo SITEURL; ?>contact.php">Contact</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>

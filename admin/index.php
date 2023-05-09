@@ -25,7 +25,7 @@
             ?>
             <h1><?php echo $count; ?></h1>
             <br>
-            Catagories
+            Categories
         </div>
         <div class="col-4 text-center">
             <?php

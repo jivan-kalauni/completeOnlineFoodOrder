@@ -2,7 +2,7 @@
 
 <div class="main-content">
     <div class="wrapper">
-        <h1>Add Catagory</h1>
+        <h1>Add Category</h1>
         <br>
         <br>
         <?php
@@ -23,7 +23,7 @@
                 <tr>
                     <td>Title:</td>
                     <td>
-                        <input type="text" name="title" id="title" placeholder="Catagorty Title">
+                        <input type="text" name="title" id="title" placeholder="Categorty Title">
                     </td>
                 </tr>
                 <tr>
@@ -46,7 +46,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <input type="submit" name="submit" id="submit" value="Add Catagory" class="btn-primary">
+                        <input type="submit" name="submit" id="submit" value="Add Category" class="btn-primary">
                     </td>
                 </tr>
             </table>
@@ -123,10 +123,10 @@ if(isset($_POST['submit'])){
 
     // check whether the query is executed or not
     if($result==true){
-        $_SESSION['add']= "<div class='success'>Catagory added successfully</div>";
+        $_SESSION['add']= "<div class='success'>Category added successfully</div>";
         header('location:'.SITEURL.'admin/manage-catagory.php');
     }else{
-        $_SESSION['add']= "<div class='error'>Failed to add catagory</div>";
+        $_SESSION['add']= "<div class='error'>Failed to add category</div>";
         header('location:'.SITEURL.'admin/add-catagory.php');
     }
 }

@@ -58,7 +58,8 @@
                                     <h2 class="food-title"><?php echo $title; ?></h2>
                                     <p class="food-price">$<?php echo $price; ?></p>
                                     <p class="food-description"><?php echo $description; ?></p>
-                                    <a href="order.html">Order</a>
+                                    <!-- <a href="order.php">Order</a> -->
+                                    <a href="<?php echo SITEURL; ?>order.php?food_id=<?php echo $id; ?>">Order</a>
                                 </div>
                             </div>
                         <?php

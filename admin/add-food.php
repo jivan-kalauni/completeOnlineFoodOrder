@@ -41,7 +41,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Catagory</td>
+                    <td>Category</td>
                     <td>
                         <select name="catagory" id="catagory">
                             <?php

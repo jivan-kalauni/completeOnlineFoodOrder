@@ -2,7 +2,7 @@
 
 <div class="main-content">
     <div class="wrapper">
-        <h1>Manage Catagory</h1>
+        <h1>Manage Category</h1>
         <br>
         <br>
         <?php
@@ -39,7 +39,7 @@
         ?>
         <br><br>
         <!-- button to add admin -->
-        <a href="<?php echo SITEURL; ?>admin/add-catagory.php" class="btn-primary">Add Catagory</a>
+        <a href="<?php echo SITEURL; ?>admin/add-catagory.php" class="btn-primary">Add Category</a>
         <br>
         <br>
             <table class="tbl-full">
@@ -112,7 +112,7 @@
                         ?>
 
                         <tr>
-                            <td colspan="6"><div class="error">No catagory added</div></td>
+                            <td colspan="6"><div class="error">No category added</div></td>
                         </tr>
 
                         <?php

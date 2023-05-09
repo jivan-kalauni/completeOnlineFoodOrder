@@ -38,9 +38,11 @@ if($count==1){
         <div class="order-form">
             <div class="food-qnty">
                 <form action="" method="POST">
-                    <fieldset>
-                        <legend>Selected Food</legend>
-                        <div class="image">
+                    <div class="first-form">
+                        <fieldset>
+                            <legend>Selected Food</legend>
+                            <div class="sel-food">
+                            <div class="image">
                             <?php
                             // check whether the image is available or not
                             if($imagename==""){
@@ -65,39 +67,39 @@ if($count==1){
                             <h4 class="quantity">Quantity</h4>
                             <input type="number" name="qty" id="qty" value="1" required>
                         </div>
-                    </fieldset>
-                
-            </div>
+                        </div>
+                        </fieldset>
+                    </div>
+                    <div class="second-form">
+                        <fieldset>
+                            <legend>Delivery Details</legend>
+                            <div id="cust">
+                                <div class="customer-detail">
+                                    <h4>Full Name</h4>
+                                    <input type="text" name="fname" id="fname" placeholder="Full Name">
+                                </div>
+                                <div class="customer-detail">
+                                    <h4>Phone Number</h4>
+                                    <input type="text" name="phone" id="phone" placeholder="Phone Number">
+                                </div>
+                                <div class="customer-detail">
+                                    <h4>Email</h4>
+                                    <input type="email" name="email" id="email" placeholder="Email">
+                                </div>
+                                <div class="customer-detail">
+                                    <h4>Address</h4>
+                                    <input type="text" name="address" id="address" placeholder="Address">
+                                </div>
+                                <br>
+                                <div>
+                                    <input type="submit" name="submit" id="" value="Confirm Order" class="btn-primary">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>    
 
 
-            <div class="order-details">
-                <fieldset>
-                    <legend>Delivery Details</legend>
-                    
-
-                        <div class="customer-detail">
-                            <h4>Full Name</h4>
-                            <input type="text" name="fname" id="fname" placeholder="Full Name">
-                        </div>
-                        <div class="customer-detail">
-                            <h4>Phone Number</h4>
-                            <input type="text" name="phone" id="phone" placeholder="Phone Number">
-                        </div>
-                        <div class="customer-detail">
-                            <h4>Email</h4>
-                            <input type="email" name="email" id="email" placeholder="Email">
-                        </div>
-                        <div class="customer-detail">
-                            <h4>Address</h4>
-                            <input type="text" name="address" id="address" placeholder="Address">
-                        </div>
-                        <br>
-                        <div>
-                            <input type="submit" name="submit" id="" value="Confirm Order" class="btn-primary">
-                        </div>
-
-                    </form>
-                    </fieldset>
                     <?php
                         // check whether the submit button is clicked or not
                         if(isset($_POST['submit'])){

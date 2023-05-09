@@ -12,7 +12,8 @@
 <body>
     <div class="login">
         
-        <h1 class="text-center">Login</h1>
+        <h1 class="text-center"><a href="register.php">Register</a> | Login</h1>
+        <!-- <h1 class="text-center">Login</h1> -->
         <br>
         <br>
         <?php

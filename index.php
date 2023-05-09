@@ -23,7 +23,7 @@
     <div class="catagory-container">
         <?php
             // create sql query to display catagory from db
-            $sql= "SELECT * FROM `tbl-catagory` WHERE active='Yes' AND featured='Yes' LIMIT 3";
+            $sql= "SELECT * FROM `tbl-catagory` WHERE active='Yes' AND featured='Yes' LIMIT 6";
             // execute the query
             $result= mysqli_query($conn,$sql);
             // count rows to check whether the catagory is available or not
